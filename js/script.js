@@ -1,5 +1,5 @@
 const apiKey = "85234ef3e426d0b1d7a7547a51851f69";          // api key for requests on the openweathermap.org
-const urlWeekWeather = "http://api.openweathermap.org/data/2.5/forecast";
+const urlWeekWeather = "https://api.openweathermap.org/data/2.5/forecast";
 const timestampsNumber = 5;
 const urlDailyWeather = "https://api.openweathermap.org/data/2.5/forecast/daily";
 const urlBaseGeo = "https://api.openweathermap.org/geo/1.0/direct";
