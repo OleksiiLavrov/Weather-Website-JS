@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+   <title>Weather</title>
+</head>
+
+<body class="body __active">
+   <main class="main __active">
+      <div class="search-box __active">
+         <input class="search-bar" id="city" type="text" placeholder="Search city...">
+         <button class="search-btn" id="submit" type="submit"><img src="./img/search-icon.png" alt="Search"></button>
+      </div>
+      <p class="search-error"></p>
+      <div class="weather">
+         <p class="weather__location">Kyiv, UA</p>
+         <p class="weather__date">10 february 2022</p>
+         <ul class="weather__tabs-content-wrap">
+            <li id="day-1" data-tab-content="0" class="weather__tab-content">
+               <div class="current">
+                  <img class="current__img" src="./img/cloudy-day.png" alt="Cloudy">
+                  <p class="current__type">Clouds</p>
+                  <p class="current__temp">30°C</p>
+                  <ul class="current__data">
+                     <li class="current__data-pres">
+                        <img src="./img/thermometer.png" alt="Pressure">
+                        <span class="current__data-descr current__pres">1009 hpa</span>
+                     </li>
+                     <li class="current__data-hum">
+                        <img src="./img/humidity.png" alt="Humidity">
+                        <span class="current__data-descr current__hum">75 %</span>
+                     </li>
+                     <li class="current__data-wind">
+                        <img src="./img/wind.png" alt="Wind">
+                        <span class="current__data-descr current__wind">4 m/s</span>
+                     </li>
+                  </ul>
+               </div>
+               <ul class="periodly">
+                  <li>
+                     <p class="periodly__units">Temp, °C</p>
+                     <p class="periodly__units">Pres, hpa</p>
+                     <p class="periodly__units">Wind, m/s</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+               </ul>
+            </li>
+            <li id="day-2" data-tab-content="1" class="weather__tab-content">
+               <div class="current">
+                  <img class="current__img" src="./img/cloudy-day.png" alt="Cloudy">
+                  <p class="current__type">Clouds</p>
+                  <p class="current__temp">30°C</p>
+                  <ul class="current__data">
+                     <li class="current__data-pres">
+                        <img src="./img/thermometer.png" alt="Pressure">
+                        <span class="current__data-descr current__pres">1009 hpa</span>
+                     </li>
+                     <li class="current__data-hum">
+                        <img src="./img/humidity.png" alt="Humidity">
+                        <span class="current__data-descr current__hum">75 %</span>
+                     </li>
+                     <li class="current__data-wind">
+                        <img src="./img/wind.png" alt="Wind">
+                        <span class="current__data-descr current__wind">4 m/s</span>
+                     </li>
+                  </ul>
+               </div>
+               <ul class="periodly">
+                  <li>
+                     <p class="periodly__units">Temp, °C</p>
+                     <p class="periodly__units">Pres, hpa</p>
+                     <p class="periodly__units">Wind, m/s</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+               </ul>
+            </li>
+            <li id="day-3" data-tab-content="2" class="weather__tab-content">
+               <div class="current">
+                  <img class="current__img" src="./img/cloudy-day.png" alt="Cloudy">
+                  <p class="current__type">Clouds</p>
+                  <p class="current__temp">30°C</p>
+                  <ul class="current__data">
+                     <li class="current__data-pres">
+                        <img src="./img/thermometer.png" alt="Pressure">
+                        <span class="current__data-descr current__pres">1009 hpa</span>
+                     </li>
+                     <li class="current__data-hum">
+                        <img src="./img/humidity.png" alt="Humidity">
+                        <span class="current__data-descr current__hum">75 %</span>
+                     </li>
+                     <li class="current__data-wind">
+                        <img src="./img/wind.png" alt="Wind">
+                        <span class="current__data-descr current__wind">4 m/s</span>
+                     </li>
+                  </ul>
+               </div>
+               <ul class="periodly">
+                  <li>
+                     <p class="periodly__units">Temp, °C</p>
+                     <p class="periodly__units">Pres, hpa</p>
+                     <p class="periodly__units">Wind, m/s</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+               </ul>
+            </li>
+            <li id="day-4" data-tab-content="3" class="weather__tab-content">
+               <div class="current">
+                  <img class="current__img" src="./img/cloudy-day.png" alt="Cloudy">
+                  <p class="current__type">Clouds</p>
+                  <p class="current__temp">30°C</p>
+                  <ul class="current__data">
+                     <li class="current__data-pres">
+                        <img src="./img/thermometer.png" alt="Pressure">
+                        <span class="current__data-descr current__pres">1009 hpa</span>
+                     </li>
+                     <li class="current__data-hum">
+                        <img src="./img/humidity.png" alt="Humidity">
+                        <span class="current__data-descr current__hum">75 %</span>
+                     </li>
+                     <li class="current__data-wind">
+                        <img src="./img/wind.png" alt="Wind">
+                        <span class="current__data-descr current__wind">4 m/s</span>
+                     </li>
+                  </ul>
+               </div>
+               <ul class="periodly">
+                  <li>
+                     <p class="periodly__units">Temp, °C</p>
+                     <p class="periodly__units">Pres, hpa</p>
+                     <p class="periodly__units">Wind, m/s</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+               </ul>
+            </li>
+            <li id="day-5" data-tab-content="4" class="weather__tab-content">
+               <div class="current">
+                  <img class="current__img" src="./img/cloudy-day.png" alt="Cloudy">
+                  <p class="current__type">Clouds</p>
+                  <p class="current__temp">30°C</p>
+                  <ul class="current__data">
+                     <li class="current__data-pres">
+                        <img src="./img/thermometer.png" alt="Pressure">
+                        <span class="current__data-descr current__pres">1009 hpa</span>
+                     </li>
+                     <li class="current__data-hum">
+                        <img src="./img/humidity.png" alt="Humidity">
+                        <span class="current__data-descr current__hum">75 %</span>
+                     </li>
+                     <li class="current__data-wind">
+                        <img src="./img/wind.png" alt="Wind">
+                        <span class="current__data-descr current__wind">4 m/s</span>
+                     </li>
+                  </ul>
+               </div>
+               <ul class="periodly">
+                  <li>
+                     <p class="periodly__units">Temp, °C</p>
+                     <p class="periodly__units">Pres, hpa</p>
+                     <p class="periodly__units">Wind, m/s</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+                  <li>
+                     <p class="periodly__time">00:00</p>
+                     <p class="periodly__temp">
+                        <span class="periodly__temp-current">27</span>
+                        <span class="periodly__temp-feel">25</span>
+                     </p>
+                     <p class="periodly__pres">1001</p>
+                     <p class="periodly__wind">5</p>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <div class="weather__tabs-wrap">
+            <a href="#day-1" data-tab="0" class="weather__tab">
+               <p class="daily__day">Mon</p>
+               <img class="daily__img" src="./img/cloudy-day.png" alt="">
+               <p class="daily__temp">27°C</p>
+            </a>
+            <a href="#day-2" data-tab="1" class="weather__tab">
+               <p class="daily__day">Tue</p>
+               <img class="daily__img" src="./img/cloudy-day.png" alt="">
+               <p class="daily__temp">31°C</p>
+            </a>
+            <a href="#day-3" data-tab="2" class="weather__tab">
+               <p class="daily__day">Wed</p>
+               <img class="daily__img" src="./img/cloudy-day.png" alt="">
+               <p class="daily__temp">25°C</p>
+            </a>
+            <a href="#day-4" data-tab="3" class="weather__tab">
+               <p class="daily__day">Thu</p>
+               <img class="daily__img" src="./img/cloudy-day.png" alt="">
+               <p class="daily__temp">29°C</p>
+            </a>
+            <a href="#day-5" data-tab="4" class="weather__tab">
+               <p class="daily__day">Fri</p>
+               <img class="daily__img" src="./img/cloudy-day.png" alt="">
+               <p class="daily__temp">28°C</p>
+            </a>
+         </div>
+      </div>
+   </main>
+
+   <script src="js/script.js"></script>
+</body>
+
+</html>
